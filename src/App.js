@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Service from "./components/Service";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-slate-500 h-screen flex justify-center">
+      <div className="grid grid-cols-2 gap-3 p-2 w-screen">
+        <div className="bg-slate-300 rounded-md p-2">
+          <div className="text-center text-2xl">Home Server</div>
+          <div className="flex flex-col bg-cyan-700 p-3 rounded-md gap-4">
+            <Service link="https://deluge.fanarohome.live/">Deluge</Service>
+          </div>
+        </div>
+        <div className="bg-slate-300 rounded-md p-2">hello</div>
+      </div>
     </div>
   );
 }
