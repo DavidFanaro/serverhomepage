@@ -1,16 +1,18 @@
-import React, { Children } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 const Service = (props) => {
   return (
-    <a
-      href={props.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className=" text-slate-300 underline underline-offset-4 text-xl duration-300 transition ease-in-out hover:no-underline"
-    >
-      {props.children}
-    </a>
+    <div className="bg-cyan-700 p-3 rounded-md">
+      <a
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className=" text-slate-300 text-xl link-underline w-fit flex items-center gap-2"
+      >
+        {props.children}
+      </a>
+    </div>
   );
 };
 
