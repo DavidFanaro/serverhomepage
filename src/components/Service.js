@@ -8,7 +8,7 @@ const Service = (props) => {
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
-        className=" text-slate-300 text-xl link-underline w-fit flex items-center gap-2"
+        className=" text-slate-300 text-xl link-underline w-fit flex items-center gap-2 hover:shadow-md"
       >
         {props.children}
       </a>
