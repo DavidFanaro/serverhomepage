@@ -4,16 +4,17 @@ export const Searchbar = () => {
   const [searchQuery, setsearchQuery] = useState("");
 
   const search = (e) => {
-    e.preventDefualt();
-    window.open(searchQuery, "_blank");
+    if (e.key === "Enter")
+      window.open(`https://duckduckgo.com/?q=${searchQuery}`, "_blank");
   };
 
   return (
     <input
-      placeholder="Search"
+      className=" p-2 rounded-md focus:outline-none focus:ring focus ring-cyan-600 transition ease-in-out md:w-1/2 w-screen bg-opacity-60 bg-white shadow-md"
+      placeholder="Search DuckDuckGo"
       onChange={(e) => setsearchQuery(e.target.value)}
       value={searchQuery}
-      onSubmit={() => search()}
+      onKeyDown={(e) => search(e)}
     />
   );
 };

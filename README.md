@@ -4,10 +4,10 @@ Built with react and tailwind
 
 - [x] Layout
 - [x] Services
-- [ ] Search Engine Compenents
-- [ ] Better Background
-- [ ] Docker
+- [x] Search Engine Compenents
+- [x] Better Background
 - [ ] Weather Compenent
+- [ ] Docker
 - [ ] Style Overhaul (Maybe)
 
 Icons are mostly from react-icons
