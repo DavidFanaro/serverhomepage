@@ -19,17 +19,22 @@ import {
 } from "react-icons/fa";
 import { ReactComponent as PrinterIcon } from "./assets/3d-printer.svg";
 import { Searchbar } from "./components/Searchbar";
+import { Weather } from "./components/Weather";
 
 function App() {
   return (
     <div className="relative h-screen">
-      <div className="bg-hero-pattern bg-no-repeat bg-cover h-screen  "></div>
-
+      <div className="bg-hero-pattern bg-no-repeat bg-cover h-screen "></div>
+      <div className="hidden md:block absolute z-10 top-0">
+        <div className="flex items-center justify-center w-screen">
+          <Weather />
+        </div>
+      </div>
       <div className="absolute h-screen top-0 backdrop-blur-md">
-        <div className=" flex flex-col  h-screen justify-center items-center bg-transparent ">
+        <div className=" flex flex-col  h-screen justify-center items-center bg-transparent lg:justify-end">
           <Searchbar />
           <div className="flex flex-row items-center justify-center ">
-            <div className="grid grid-rows-2 md:grid-cols-2 gap-3 p-2 w-screen h-fit">
+            <div className="grid grid-rows-2 md:grid-cols-2 gap-3 lg:grid-cols-2 p-2 w-screen h-fit">
               <div className="bg-slate-300 rounded-md p-2 bg-opacity-60 shadow-md">
                 <div className="text-center text-2xl">Home Server</div>
                 <div className="flex flex-row flex-wrap gap-4 w-auto pt-3 justify-center">
