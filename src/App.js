@@ -24,14 +24,14 @@ import { Weather } from "./components/Weather";
 function App() {
   return (
     <div className="relative h-screen">
-      <div className="bg-hero-pattern bg-no-repeat bg-cover h-screen "></div>
+      <div className="bg-hero-pattern bg-no-repeat bg-st bg-cover h-screen "></div>
       <div className="hidden md:block absolute z-10 top-0">
         <div className="flex items-center justify-center w-screen">
           <Weather />
         </div>
       </div>
       <div className="absolute h-screen top-0 backdrop-blur-md">
-        <div className=" flex flex-col  h-screen justify-center items-center bg-transparent lg:justify-end">
+        <div className=" flex flex-col h-screen justify-center items-center bg-transparent  ">
           <Searchbar />
           <div className="flex flex-row items-center justify-center ">
             <div className="grid grid-rows-2 md:grid-cols-2 gap-3 lg:grid-cols-2 p-2 w-screen h-fit">

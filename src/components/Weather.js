@@ -26,7 +26,7 @@ export const Weather = () => {
   return (
     <div>
       {weatherData ? (
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-2">
           <div>
             {weatherData.weather[0].description.replace(/\b\w/g, (c) =>
               c.toUpperCase()
